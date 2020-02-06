@@ -1,0 +1,65 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="Ej4_data" version="1.3.0" audacityversion="2.3.2" sel0="0.0000000000" sel1="0.0000000000" vpos="144" h="0.0000000000" zoom="262.1242843511" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags/>
+	<wavetrack name="DoAlto" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="201216">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808c33.au" len="201216" min="-1.0" max="0.776222" rms="0.097887"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="DoAlto2" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="1.46877551" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="100608">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808548.au" len="100608" min="-0.996207" max="0.772371" rms="0.097887"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="DoAlto3" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="1.99142857" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="50304">
+				<waveblock start="0">
+					<simpleblockfile filename="e08085cf.au" len="50304" min="-0.982976" max="0.765315" rms="0.097885"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="DoAlto4" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="2.07156463" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="25152">
+				<waveblock start="0">
+					<simpleblockfile filename="e08083cf.au" len="25152" min="-0.91825" max="0.714732" rms="0.097551"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Sol" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.99188209" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="134144">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808ef9.au" len="134144" min="-0.996059" max="0.776269" rms="0.097887"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Mi" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.52646259" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="160973">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808a4a.au" len="160973" min="-0.997864" max="0.776171" rms="0.097887"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

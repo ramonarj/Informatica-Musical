@@ -1,0 +1,101 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="Ej3_data" version="1.3.0" audacityversion="2.3.2" sel0="0.0000000000" sel1="0.0000000000" vpos="480" h="4.6880914431" zoom="263.2201216603" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags/>
+	<wavetrack name="Primero" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="201216">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808841.au" len="201216" min="-1.0" max="0.776222" rms="0.097887"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Segundo" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.49768707" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="201216">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808678.au" len="201216" min="-0.398107" max="0.30902" rms="0.038969"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Tercero" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="1.00675737" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="201216">
+				<waveblock start="0">
+					<simpleblockfile filename="e080814d.au" len="201216" min="-0.223872" max="0.173774" rms="0.021914"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Cuarto" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="1.52723356" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="201216">
+				<waveblock start="0">
+					<simpleblockfile filename="e080834d.au" len="201216" min="-0.158489" max="0.123023" rms="0.015514"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Quinto" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="1.99072562" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="201216">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808d31.au" len="201216" min="-0.089125" max="0.069181" rms="0.008724"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Quinto" channel="2" linked="0" mute="0" solo="0" height="147" minimized="0" isSelected="1" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="2.51120181" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="201216">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808002.au" len="201216" min="-0.056234" max="0.04365" rms="0.005505"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Delay1" channel="2" linked="0" mute="1" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="201216">
+				<waveblock start="0">
+					<simpleblockfile filename="e080829b.au" len="201216" min="-1.0" max="0.776222" rms="0.110901"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="4.56272109" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="220500">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808f2d.au" len="220500" min="-0.026086" max="0.030314" rms="0.004142"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Delay2" channel="2" linked="0" mute="1" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="201216">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808373.au" len="201216" min="-1.0" max="0.776222" rms="0.1262"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="4.56272109" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="92610">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808068.au" len="92610" min="-0.001904" max="0.001944" rms="0.000315"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>
