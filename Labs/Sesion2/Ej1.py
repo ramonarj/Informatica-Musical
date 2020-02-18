@@ -10,7 +10,7 @@ def plotWave(x:np.array, y:np.array):
     '''
     plt.plot(x, y)
     plt.xlabel('Tiempo')
-    plt.ylabel('Valor')
+    plt.ylabel('Intensidad')
     plt.axis('tight')
     plt.show()
 
@@ -18,46 +18,25 @@ def sin(frec:int, dur:float):
     '''
     Oscilador con forma de seno
     '''
-    # Creamos eje X
-    x = np.linspace(0, dur * frec, SRATE * dur)
-    
+    # Creamos eje X 
+    x = np.linspace(0, dur, SRATE * dur)
+    lamda = 1 / frec #long.onda
+
     # Seno
-    y = np.sin(x * 2 * np.pi)
+    y = np.sin((2 * np.pi * x) / lamda)
 
-    # "Comprimimos" la onda a la duración de verdad
-    x = x/frec
     return x, y
-
-def saw(frec:int, dur:float):
-    '''
-    Oscilador con forma de diente de sierra
-    '''
-    # Creamos eje X: lo creamos de "dur*frec" segundos para hacer como si fuera una onda de 1Hz; 
-    # así luego al comprimir estos valores a la duración real, la onda queda con la frecuencia adecuada.
-    x = np.linspace(0, dur * frec, SRATE * dur)
-
-    # Diente de sierra
-    incr = x - np.floor(x) #Entre 0 y 1
-    y = 2 * incr - 2 * np.around(incr) 
-
-    # "Comprimimos" la onda a la duración de verdad
-    x = x / frec
-    return x, y
-
 
 def square(frec:int, dur:float):
     '''
     Oscilador con forma de cuadrado
     '''
-    # Creamos eje X 
-    x = np.linspace(0, dur * frec, SRATE * dur)
+    # Partimos del seno
+    x, y = sin(frec, dur) 
 
     # Cuadrado
-    incr = x - np.floor(x)
-    y = 1 - 2 * np.around(incr)
+    y = np.where(np.sign(y) >= 0, 1, -1)
 
-    # "Comprimimos" la onda a la duración de verdad
-    x = x / frec
     return x, y
 
 
@@ -65,19 +44,37 @@ def triangle(frec:int, dur:float):
     '''
     Oscilador con forma de triángulo
     '''
-    # Creamos eje X 
-    x = np.linspace(0, dur * frec, SRATE * dur)
+    # Partimos del seno
+    x, y = sin(frec, dur) 
 
     # Triángulo
-    # TODO: hacerlo
+    y = 2 / np.pi * np.arcsin(y)
 
-    # "Comprimimos" la onda a la duración de verdad
-    x = x / frec
+    return x, y
+
+def saw(frec:int, dur:float):
+    '''
+    Oscilador con forma de diente de sierra
+    '''
+    # Creamos eje X 
+    x = np.linspace(0, dur, SRATE * dur)
+    lamda = 1 / frec #long.onda
+
+    # Diente de sierra
+    tanTerm = np.tan((2 * np.pi * x) / (2 * lamda))
+    y = 2 / np.pi * np.arctan(tanTerm)
+
     return x, y
 
 
 def main():
+    x, y = sin(1,1)
+    plotWave(x, y)
+    x, y = square(1,1)
+    plotWave(x, y)
     x, y = triangle(1,1)
+    plotWave(x, y)
+    x, y = saw(1,1)
     plotWave(x, y)
 
 
