@@ -112,16 +112,16 @@ def fadeIn(sample, t:float):
 
 def main():
     # Creamos generadores
-    sinSamp= sin(1,10)
-    squareSamp = square(1,1)
-    triangleSamp = triangle(1,1)
-    sawSamp = saw(1,1)
+    sinSamp= sin(5,10)
+    squareSamp = square(5,10)
+    triangleSamp = triangle(5,10)
+    sawSamp = saw(5,5)
 
     # Efectos
-    sample = squareSamp
+    sample = sawSamp
     sample = vol(sample, 2)
-    #sample = fadeIn(sample, 5)
-    #sample = fadeOut(sample, 5)
+    sample = fadeIn(sample, 2.5)
+    sample = fadeOut(sample, 2.5)
     plotWave(sample)
 
 
