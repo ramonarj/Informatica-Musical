@@ -1,4 +1,5 @@
 ## Gitignore para nuestro proyecto de Informática Musical.
 ## Similar al de https://github.com/xBlacKnife/Proyecto-III/blob/master/.gitignore
 
-# De momento nada
+# Carpeta generada de python
+*\__pycache__
