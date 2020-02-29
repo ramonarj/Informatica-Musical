@@ -99,3 +99,76 @@ def fadeIn(sample, t:float):
     sample[:fadedSamples] *= fadeLevels
 
     return sample
+
+
+class Osc:
+    '''
+    Clase para representar a un oscilador que funciona por chunks.
+    Puede reproducir ondas de seno, cuadrado, triángulo o sierra
+    '''
+    def __init__(self, shape:str, frec:int, vol:float):
+        '''
+        Constructora, recibe el tipo de onda, la frecuencia y el volumen
+        '''
+        self.frec = frec
+        self.fase = 0
+        self.vol = vol
+
+        # Nos quedamos con cuál será la función que genera la forma de onda que queremos
+        if(shape == "sin"):
+            self.generator = sin
+        elif(shape == "square"):
+            self.generator = square
+        elif(shape == "triangle"):
+            self.generator = triangle
+        elif(shape == "saw"):
+            self.generator = saw
+
+
+    def next(self):
+        '''
+        Devuelve el siguente chunk (de tamaño CHUNK)
+        '''
+        # Obtenemos el siguiente chunk
+        dur = float(CHUNK) / float(SRATE) # duración del chunk
+        data = self.vol * self.generator(self.frec, dur, self.fase) # oscilador con una frecuencia, duración y fase dadas
+
+        # Desfasamos la onda para la próxima vez
+        self.fase += CHUNK
+        return data
+
+    def srate(self):
+        '''
+        Devuelve el sample rate usado
+        '''
+        return SRATE
+
+    def chunkSize(self):
+        '''
+        Devuelve el tamaño usado para los chunks
+        '''
+        return CHUNK
+
+    def setVol(self, newVol):
+        '''
+        Cambia el volumen
+        '''
+        self.vol = newVol
+    
+    def getVol(self):
+        '''
+        Devuelve el volumen
+        '''
+        return self.vol
+
+    def setFrec(self, newFrec):
+        '''
+        Cambia el volumen
+        '''
+        self.frec = newFrec
+    
+    def getFrec(self):
+        '''
+        Devuelve el volumen
+        '''
+        return self.frec
