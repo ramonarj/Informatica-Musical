@@ -8,6 +8,19 @@ import matplotlib.pyplot as plt
 SRATE = 44100
 CHUNK = 1024
 
+def getFormat(formatType):
+    '''
+    Devuelve 1, 2 3 o 4
+    '''
+    if formatType == np.int16: fmt = 2
+    elif formatType == np.int32: fmt = 4
+    elif formatType == np.float32: fmt = 4
+    elif formatType == np.uint8: fmt = 1
+    else: raise Exception('Not supported')
+
+    return fmt
+
+
 def plotWave(sample):
     '''
     Pinta una señal dada (con datos para ambos ejes)
@@ -20,6 +33,8 @@ def plotWave(sample):
     plt.axis('tight')
     plt.show()
 
+
+## GENERADORES ##
 def sin(frec:int, dur:float, fase=0):
     '''
     Oscilador con forma de seno
@@ -63,42 +78,6 @@ def saw(frec:int, dur:float, fase=0):
     y = 2 / np.pi * np.arctan(tanTerm)
 
     return y
-
-
-def vol(sample, factor):
-    '''
-    Cambia el volumen según el factor dado a la función
-    '''
-
-    # Multiplicamos
-    sample *= factor
-
-    return sample
-
-def fadeOut(sample, t:float):
-    '''
-    Desvanece la señal desde el instante indicado hasta el final
-    '''
-
-    # Multiplicamos
-    fadedSamples = (int)(len(sample) - SRATE * t)
-    fadeLevels = np.flip(np.arange(0.0, 1.0, step=1/fadedSamples))
-    sample[-fadedSamples:] *= fadeLevels
-
-    return sample
-
-
-def fadeIn(sample, t:float):
-    '''
-    Desvanece la señal desde el principio hasta el instante indicado
-    '''
-
-    # Multiplicamos
-    fadedSamples = (int)(SRATE * t)
-    fadeLevels = np.arange(0.0, 1.0, step=1/fadedSamples)
-    sample[:fadedSamples] *= fadeLevels
-
-    return sample
 
 
 class Osc:
@@ -172,3 +151,72 @@ class Osc:
         Devuelve el volumen
         '''
         return self.frec
+
+
+## PROCESAMIENTO ##
+
+def vol(sample, factor):
+    '''
+    Cambia el volumen según el factor dado a la función
+    '''
+
+    # Multiplicamos
+    sample *= factor
+
+    return sample
+
+def fadeOut(sample, t:float):
+    '''
+    Desvanece la señal desde el instante indicado hasta el final
+    '''
+
+    # Multiplicamos
+    fadedSamples = (int)(len(sample) - SRATE * t)
+    fadeLevels = np.flip(np.arange(0.0, 1.0, step=1/fadedSamples))
+    sample[-fadedSamples:] *= fadeLevels
+
+    return sample
+
+
+def fadeIn(sample, t:float):
+    '''
+    Desvanece la señal desde el principio hasta el instante indicado
+    '''
+
+    # Multiplicamos
+    fadedSamples = (int)(SRATE * t)
+    fadeLevels = np.arange(0.0, 1.0, step=1/fadedSamples)
+    sample[:fadedSamples] *= fadeLevels
+
+    return sample
+
+
+class ModulatorAmp:
+    '''
+    Clase para representar a un oscilador que funciona por chunks.
+    Puede reproducir ondas de seno, cuadrado, triángulo o sierra
+    '''
+    def __init__(self, frec:int):
+        '''
+        Constructora, recibe el tipo de onda, la frecuencia y el volumen
+        '''
+        self.frec = frec
+        self.fase = 0
+
+    def next(self, data):
+        '''
+        Devuelve el siguente chunk (de tamaño CHUNK)
+        '''
+
+        dur = float(len(data)) / float(SRATE)
+        sinData = sin(self.frec, dur, self.fase) 
+
+        self.fase += CHUNK
+        return data * sinData
+
+'''
+def ModulatorAmp(data, frec):
+    dur = float(len(data)) / float(SRATE)
+    sinData = sin(frec, dur, 0) 
+    return data * sinDat
+'''

@@ -5,7 +5,7 @@ import pyaudio, wave # Para el audio
 import kbhit # Para gestión de input
 from scipy.io import wavfile # Para manejo de wavs
 import time # Para esperar a la hebra
-from Utilities import plotWave, sin, square, saw, triangle, Osc # Para pintar ondas y generar osciladores de varios tipos
+from Utilities import plotWave, Osc # Para pintar ondas y generar osciladores de varios tipos
 
 SRATE = 44100 # frecuencia de muestreo para los osciladores
 CHUNK = 1024
