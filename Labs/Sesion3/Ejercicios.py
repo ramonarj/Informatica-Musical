@@ -14,6 +14,9 @@ SRATE = 44100 # frecuencia de muestreo para los osciladores
 TYPE = np.float32 # generamos como floats en [0,1]
 
 pianoKeys = {'z':0, 's':1, 'x':2, 'd':3, 'c':4, 'v':5, 'g':6, 'b':7, 'h':8, 'n':9, 'j':10, 'm':11, 'q':12, '2':13, 'w':14, '3':15, 'e':16, 'r':17, '5':18, 't':19, '6':20, 'y':21, '7':22, 'u':23} 
+MAX_KEYNO = 3
+NUM_BLOQUES = [0, 0, 0]
+
 
 def Ejercicios1y2(shape, frec, vol):
     '''
@@ -167,19 +170,24 @@ def Ejercicio8():
     print("Press '0' to quit")
     c= ' '
     volIncr = 0.1
-    stream = None
+    activeStreams = []
     while c != '0':
+        print(activeStreams)
+        global numBloque
         # Reseteamos el nº bloque si ha terminado el stream
-        if(stream != None and not stream.is_active()):
-            global numBloque
-            numBloque = 0
+        lol = ["1", "2","3"]
+        for stream in (activeStreams):
+            #print(lol)
+            if(stream != None and not stream.is_active() and numBloque != 0):
+                activeStreams.remove(stream)
+                numBloque = 0
         # Pulsación de teclado
         if kb.kbhit():
             c = kb.getch()
             # Comprobamos que sea una tecla válida
             if(c in pianoKeys):
-                # Se toca una nota que ya estaba sonando
-                if(stream != None and stream.is_active()):
+                if(len(activeStreams) > MAX_KEYNO):
+                    stream = activeStreams.pop(0)
                     stream.stop_stream()
                     numBloque = 0
                 # Creamos el stream con la nota dada
@@ -191,6 +199,7 @@ def Ejercicio8():
                         output=True,                         # stream de salida
                         stream_callback=callback)            # callback para leer los datos
                 stream.start_stream()
+                activeStreams.append(stream)
         
         else:
             time.sleep(0.1)
