@@ -20,6 +20,18 @@ def getFormat(formatType):
 
     return fmt
 
+def getFormatFromString(formatType):
+    '''
+    Devuelve 1, 2 3 o 4 (recibe un string)
+    '''
+    if formatType == 'int16': fmt = 2
+    elif formatType == 'int32': fmt = 4
+    elif formatType == 'float32': fmt = 4
+    elif formatType == 'uint8': fmt = 1
+    else: raise Exception('Not supported')
+
+    return fmt
+
 
 def plotWave(sample):
     '''
