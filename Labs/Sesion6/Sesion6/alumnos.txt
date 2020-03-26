@@ -1,0 +1,13 @@
+- Juan Ruiz Jiménez
+- Ramón Arjona Quiñones
+
+Hemos hecho todos los puntos que se pedían, incluyendo los opcionales.
+(Hemos usado VSCO2Piano y SLDrums)
+
+No hemos tenido problemas con muchas cosas, ya que el enunciado 
+está bien explicado y la interfaz es intuitiva y fácil de usar.
+
+Sí que hay un par de cosas que non nos quedan claras de Reaper:
+- Para qué sirve el parámetro "Feedback" del Delay.
+- Cómo hacer para grabar en un mismo track la batería en diferentes tomas
+(una vez los platillos, otra el bombo y caja...) y hacer que suenen todas las capas a la vez luego.
