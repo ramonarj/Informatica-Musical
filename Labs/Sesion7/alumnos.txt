@@ -1,0 +1,12 @@
+- Juan Ruiz Jiménez
+- Ramón Arjona Quiñones
+
+Hemos hecho todos los puntos que se pedían menos:
+ * En los puntos 5 y 10, en vez de usar un limitador hemos usado un compresor de Cockos con radio 1:inf y umbral en 0db.
+  (porque nos descargamos un plugin pero no sabíamos usarlo)
+ * En el punto 6, no nos funcionaba bien el delay con los 2 golpes de guitarra,
+   así que lo hemos omitido (se escuchaba raro)
+ * Hemos pegado ("glue") los recortes que hemos hecho en los puntos 7 y 8 para tener las pistas
+   mejor organizadas.
+
+Creemos que la mezcla está medio decente.
