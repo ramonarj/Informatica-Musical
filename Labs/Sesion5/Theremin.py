@@ -1,5 +1,6 @@
 # Juan Ruiz Jiménez
 # Ramón Arjona Quiñones
+
 import numpy as np # Para los arrays
 import pyaudio, wave # Para el audio
 import pygame # Para el control de input sobre la pantalla
@@ -8,12 +9,13 @@ from pygame.locals import *
 CHUNK = 1024 # Tamaño de los bloques (en nº muestras)
 SRATE = 44100 # frecuencia de muestreo para los osciladores
 TYPE = np.float32 # generamos como floats en [0,1]
-CHANNELS = 2 # numero de canales
+CHANNELS = 1 # numero de canales
 W_WIDTH = 640 # ancho de la pantalla
 W_HEIGHT = 480 # alto de la pantalla
 
 p = pyaudio.PyAudio()
-#Stream de salida
+
+# Stream de salida
 stream = p.open(format=p.get_format_from_width(4), 
                 channels=CHANNELS,
                 rate=SRATE,
@@ -32,6 +34,7 @@ def oscFM(frecs,frame):
 
     # recorremos en orden inverso
     for i in range(len(frecs)-1,-1,-1):
+
         # utilizamos samples como moduladora de una nueva portadora
         samples = frecs[i][1] * np.sin(2*np.pi*frecs[i][0]*chunk/SRATE + samples)
 
@@ -57,7 +60,7 @@ while not quit_flag:
     datas.append(1 - (mouse_y / W_HEIGHT))
 
     result = []
-    result.append(datas)
+    result.append(datas)    
 
     data = oscFM(result, 0)
     stream.write(data)
