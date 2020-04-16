@@ -1,6 +1,9 @@
 //1º
 s.boot
 
+//Para probar que se escucha
+{SinOsc.ar([340, 345])*0.2}.play;
+
 //2º
 FoxDot.start
 
