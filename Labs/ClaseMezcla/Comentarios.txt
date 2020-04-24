@@ -1,0 +1,9 @@
+Aparte de lo que se pedía y que ya hicimos con Marco, he añadido:
+	- Efecto Haas para el Clap y la Rhythm Guitar
+	- Gate en la Voz para filtrar ruido
+	- Ecualización en casi todas las pistas
+	- Paneados (dejando en el centro el Bajo, el Órgano y la Voz) 
+	
+Me ha quedado la duda de si hay algún efecto que permita comprimir la 
+señal solo cuando esté por DEBAJO de cierto umbral (como el compresor pero al revés)
+Igual con el Gate se puede pero no he sabido hacerlo.
