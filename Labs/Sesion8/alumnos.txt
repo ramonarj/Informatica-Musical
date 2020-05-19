@@ -1,9 +1,12 @@
 - Juan Ruiz Jiménez
 - Ramón Arjona Quiñones
 
+Hemos conseguido hacer todo lo que se pedía.
+El .rpp está dentro del zip junto a los "Glues"
+
 Cada uno teníamos instalado un VST diferente para usar en la parte del
-MIDI, pero para no crear confusión hemos dejado solo Kontakt en la 
-batería y el bajo.
+MIDI, así que para no crear confusión hemos dejado solo el de Kontakt
+tanto para batería como para bajo.
 
 La voz en 8D clipea si no le bajamos bastante el fader en la mezcla (por el paneo).
 Por eso le hemos metido un compresor para compensarlo y que gane más fuerza.
