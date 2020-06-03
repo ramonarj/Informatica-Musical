@@ -1,15 +1,21 @@
 - Juan Ruiz Jiménez
 - Ramón Arjona Quiñones
 
-INSTRUMENTOS:
-- Pad1: "Blurry Skies" (Kontakt)
-- Pad2: "Slow Creep" (Kontakt)
-- Melodía 1: "Marimba" (Kontakt)
-- Melodía 2: "Mountain Origins" (Kontakt)
-- Bajo: "Ample Bass"
-- Percusión: "Drum Pro"
+Hemos hecho todo lo que se pedía menos la parte opcional del Arpegiador (las bells para el cambio de acorde sí).
+Para la primera parte, hemos elegido la escala mixolidida para que los acordes de VII sean mayores.
 
-EFECTOS:
-- Reverbs: "OrilRiver"
-- Delays: "HY-Delay4_free"
-- EQs: "ReaEQ"
+Todos los instrumentos (pads, marimba, flauta, bells, bajo y batería) 
+son de la selección de Kontakt, y los efectos son los que ya venimos usando.
+
+Los acordes que hemos usado:
+	- 1º parte -> LaM, ReM, SolM 
+	- 2º parte -> Lam, FaM 
+	- 3º parte -> Lam, FaM, SolM 
+	- 4º parte -> los mismos que la 2º (es una copia)
+	
+Y las notas de cada acorde: (no sabemos si hace falta decir esto pero nos lo ha parecido por lo que pone en el enunciado)
+LaM -> La, Do#, Mi
+ReM -> Re, Fa#, La
+SolM -> Sol, Si, Re
+Lam -> La, Do, Mi
+FaM -> Fa, La, Do

@@ -1,0 +1,9 @@
+1º Parte:
+Composición de una pieza para un videojuego en Reaper explorando nuevos plugins no vistos en la asignatura, como:
+	- BlueArp (arpegiador)
+	- Instrumentos virtuales de orquesta (sForzando)
+
+La pieza estará estructurada por capas y pensada para que sus partes sean loopeables.
+
+2ºParte:
+Importación a FMOD para demostrar cómo se adaptaría la pieza a diferentes eventos de un juego dado.
