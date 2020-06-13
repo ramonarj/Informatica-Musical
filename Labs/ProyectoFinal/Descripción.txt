@@ -1,10 +1,15 @@
 1º Parte:
-Composición de una pieza para un videojuego en Reaper explorando nuevos plugins no vistos en la asignatura, como:
+Composición de una pieza en Reaper para un videojuego en Reaper explorando nuevos plugins no vistos en la asignatura:
 	- BlueArp (arpegiador)
 	- Instrumentos virtuales de orquesta (sForzando)
 	
+Aparte de algunos ya vistos (OrilRiver, HY_Delay4free, ReaEQ...)
+La pieza está en la tonalidad de La Dórico, y cuenta con 5 partes de distintos ambientes,
+aunque todas comparten más o menos el mismo repertorio de instrumentos y son loopeables entre ellas.
 
-La pieza estará estructurada por capas y pensada para que sus partes sean loopeables.
 
 2ºParte:
 Importación a FMOD para demostrar cómo se adaptaría la pieza a diferentes eventos de un juego dado.
+Según los eventos recibidos:
+	- Se cambia de una parte a otra con una transición
+	- Se añaden/eliminan capas de instrumentos de la parte activa
