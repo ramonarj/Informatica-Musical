@@ -1,15 +1,50 @@
+--------------------------------------
+INTEGRANTES
+--------------------------------------
+
+RAMÓN ARJONA QUIÑONES
+JUAN RUIZ JIMÉNEZ
+
+--------------------------------------
+DESCRIPCIÓN
+--------------------------------------
+
 1º Parte:
-Composición de una pieza en Reaper para un videojuego en Reaper explorando nuevos plugins no vistos en la asignatura:
-	- BlueArp (arpegiador)
-	- Instrumentos virtuales de orquesta (sForzando)
-	
-Aparte de algunos ya vistos (OrilRiver, HY_Delay4free, ReaEQ...)
-La pieza está en la tonalidad de La Dórico, y cuenta con 5 partes de distintos ambientes,
-aunque todas comparten más o menos el mismo repertorio de instrumentos y son loopeables entre ellas.
 
+Composición de una pieza musical en Reaper. Una obra orquestal apoyada en plugins vistos en la asignatura, como pueden ser OrilRiver, HY_Delay, ReaEQ... Así como plugins nuevos especialmente dedicados a la composición en orquesta, como es sForzando.
+Este último es un plugin que ofrece un amplio abanico de posibilidades sonoras y de instrumentos con un sonido de calidad, por lo que forma parte del grueso principal de la obra, con el objetivo de lograr un sonido cohesionado. Además hemos utilizado plugins recomendados por el tutor de la asignatura como puede ser BlueArp, para poder lograr sonidos arpegiados dentro de la composición.
 
-2ºParte:
+El desafío principal al que nos enfrentamos constaba en realizar una obra distribuída por partes y capas, puesto que el objetivo es poder llevarla al campo de los videojuegos y explorar su capacidad adaptativa con FMOD Studio. Cada parte es autosuficiente y  loopeable por si misma y dispone de una serie de capas de instrumentos que funcionan en conjunto y se pueden activar y desactivar.
+Para lograr una diferenciación entre las partes pero que se mantengan dentro de un marco armónico con sentido, utilizamos el recurso  de la modulación y la variación de timbres y pulsos. La obra está compuesta en La Dórico, sin embargo, nos movemos por sus modos relativos Jónico y Eólico en momentos puntuales para lograr diferentes colores y sensaciones (partes 3-4-5).
+
+2º Parte:
+
 Importación a FMOD para demostrar cómo se adaptaría la pieza a diferentes eventos de un juego dado.
 Según los eventos recibidos:
 	- Se cambia de una parte a otra con una transición
 	- Se añaden/eliminan capas de instrumentos de la parte activa
+
+Para poder lograr el comportamiento de cambio entre partes implementamos una máquina de estados en el propio FMOD a partir de marcadores.
+De esta manera se puede viajar de una parte a otra dependiendo de una variable entera que va de 1 a 5.
+Para poder lograr la funcionalidad de activar/desactivar las capas implementamos un mixer gracias a las variables "parameters" del propio FMOD.
+Para terminar, añadimos un detalle como la posibilidad de añadir un filtro de paso bajo para simular que te encuentras dentro de una casa.
+
+--------------------------------------
+TECNOLOGÍAS UTILIZADAS
+--------------------------------------
+
+- Reaper
+- Fmod Studio
+
+--------------------------------------
+APORTACIONES DE LOS MIEMBROS
+--------------------------------------
+
+Ambos integrantes hemos participado en la composición de la pieza, aportando cada uno diferentes partes, nuevas capas a cada parte y decisiones tímbricas. Establecimos una tonalidad base y a partir de ahí cada uno construyó sus ideas armónicas.
+Para juntarlo todo en FMOD realizamos una videollamada conjunta y establecimos los parámetros necesarios para lograr que la pieza sea adaptativa. 
+
+--------------------------------------
+POSIBLES MEJORAS
+--------------------------------------
+
+Como ampliaciones/mejoras para el proyecto, se podrían añadir nuevas capas con diferentes plugins al proyecto, así como la composición de nuevas partes para hacer que este suene más rico en cuanto a variedad. Además se podrían componer "nexos" que sirvan de unión entre cada parte para evitar cambios bruscos cuando se produzcan los cambios.
