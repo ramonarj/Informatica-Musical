@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{bd602fa8-4054-447c-9518-7f0982c5113f}">
+        <property name="name">
+            <value>Percusión</value>
+        </property>
+        <relationship name="folder">
+            <destination>{8768d8e8-a58c-4f8d-ab18-6ba1ba467563}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{ed1e5952-2b39-48ef-a01c-33c176376801}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{ed1e5952-2b39-48ef-a01c-33c176376801}">
+        <property name="initialValue">
+            <value>1</value>
+        </property>
+    </object>
+</objects>

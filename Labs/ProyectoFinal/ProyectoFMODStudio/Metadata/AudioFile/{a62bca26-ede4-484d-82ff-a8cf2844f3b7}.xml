@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{a62bca26-ede4-484d-82ff-a8cf2844f3b7}">
-        <property name="assetPath">
-            <value>Tracks/Parte 1/P1_Acordeón.wav</value>
-        </property>
+        <property name="assetPath"/>
         <property name="isStreaming">
             <value>true</value>
         </property>

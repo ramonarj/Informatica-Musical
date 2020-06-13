@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{c9caaa52-c262-4825-bc44-91fae97ec9c3}">
-        <property name="assetPath">
-            <value>Tracks/Parte 5/P5_Timbales.wav</value>
-        </property>
+        <property name="assetPath"/>
         <property name="isStreaming">
             <value>true</value>
         </property>

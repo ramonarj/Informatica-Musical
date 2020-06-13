@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{02cf89b4-316c-4869-b642-8853334b1b05}">
-        <property name="assetPath">
-            <value>Tracks/Parte 4/P4_Clarinete.wav</value>
-        </property>
+        <property name="assetPath"/>
         <property name="isStreaming">
             <value>true</value>
         </property>

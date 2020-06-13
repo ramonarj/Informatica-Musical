@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{d4e45997-335c-4f34-ab38-a716efe86d55}">
-        <property name="assetPath">
-            <value>Tracks/Parte 3/P3_Pizzicato.wav</value>
-        </property>
+        <property name="assetPath"/>
         <property name="isStreaming">
             <value>true</value>
         </property>

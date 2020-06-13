@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{647a1e11-cbc1-447b-a0d0-5b8478d9a4f0}">
+        <property name="name">
+            <value>Armonía</value>
+        </property>
+        <relationship name="folder">
+            <destination>{8768d8e8-a58c-4f8d-ab18-6ba1ba467563}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{579af8e6-7986-481f-9af9-d11042709bfd}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{579af8e6-7986-481f-9af9-d11042709bfd}">
+        <property name="initialValue">
+            <value>1</value>
+        </property>
+    </object>
+</objects>
