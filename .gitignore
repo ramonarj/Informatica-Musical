@@ -1,5 +1,11 @@
 ## Gitignore para nuestro proyecto de Informática Musical.
-## Similar al de https://github.com/xBlacKnife/Proyecto-III/blob/master/.gitignore
 
 # Carpeta generada de python
 *\__pycache__
+
+# FMOD Studio
+*.cache/
+*.user/
+
+# Para el vídeo de la presentación 
+*.mp4
